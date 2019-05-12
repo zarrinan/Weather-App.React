@@ -41,7 +41,7 @@ handleZipcodeChange(event) {
 
 handleZipcodeSubmit(event) {
   event.preventDefault();
-  let url = `http://api.openweathermap.org/data/2.5/weather?zip=${this.state.zipcode}&units=imperial&appid=5af0320b9917cd01193d15669c155064`;
+  let url = `https://api.openweathermap.org/data/2.5/weather?zip=${this.state.zipcode}&units=imperial&appid=5af0320b9917cd01193d15669c155064`;
 
   axios(url)
   .then(res => {
